@@ -1,0 +1,24 @@
+/*
+Template Name: venus
+Author: wrappixel
+Email: niravjoshi87@gmail.com
+File: scss
+*/
+
+@import "variable";
+@import "bootstrap/bootstrap.scss";
+@import "./icons/font-awesome/css/fontawesome-all.css";
+@import "./icons/themify-icons/themify-icons.css";
+@import "./global";
+
+
+//  Layout
+@import "../scss/layout/footer/footer-light/footer-light";
+@import "../scss/layout/header/header";
+
+
+@import "../scss/config/theme-variable/theme-variable";
+@import "../scss/responsive";
+
+// new scss
+@import "../scss/carousel/carousel.scss";

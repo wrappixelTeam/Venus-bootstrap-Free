@@ -1,0 +1,112 @@
+header {
+    .nav-item {
+        padding: 0 5px;
+        .nav-link{
+            border: 1px solid transparent;
+            &:hover{
+                color: #2f73f2 !important;
+            }
+        }
+        .nav-link.active{
+            color: #2f73f2 !important;
+            border-bottom: 1px solid #2f73f2;
+        }
+    }
+    .navbar-collapse{
+        .input-search{
+            max-width: 150px;
+            width: 100%;
+            .search-box {
+                .form-control{
+                    border-radius: $border-radius;
+                    padding: 10px 12px;
+                    &::placeholder{
+                        color: $primary;
+                    }
+                }
+                i{
+                    top: 50%;
+                    right: 10px;
+                    transform: translateY(-50%);
+                }
+            }
+        }
+    }
+}
+.header.docs{
+    &.scrolled{
+        .navbar-brand{
+            .dark-logo{
+                display: block !important;
+            }
+            .light-logo{
+                display: none;
+            }
+        }
+        .navbar-collapse{
+            .navbar-nav{
+                .nav-item{
+                    .nav-link{
+                        color: $dark !important;
+                    }
+                }
+            }
+        }
+        .navbar-toggler{
+            color: $dark !important;
+        }
+    }
+    .navbar{
+        .navbar-brand{
+            .dark-logo{
+                display: none;
+            }
+        }
+    }
+    .navbar-collapse{
+        .navbar-nav{
+            .nav-item{
+                .nav-link{
+                    color: $white !important;
+                }
+            }
+        }
+    }
+}
+
+.header-bg.scrolled {
+    background: $white;
+    transition: all 0.4s ease-in-out;
+    box-shadow: 0 2px 20px rgba($color: $black, $alpha: 0.05);
+}
+
+// Header2
+.header-bg {
+    @include media-breakpoint-down(lg) {
+        .navbar-collapse {
+            background-color: $light-info;
+        }
+    }
+}
+
+// It Header
+.it-header-bg {
+    @include media-breakpoint-down(lg) {
+        .navbar-collapse {
+            background-color: $primary;
+        }
+    }
+}
+
+.it-header-bg.scrolled {
+    background: $primary;
+    transition: all 0.4s ease-in-out;
+    box-shadow: 0 2px 20px rgba($color: #000000, $alpha: 0.05);
+    .navbar {
+        .navbar-collapse{
+            .buy-now-btn{
+                border-color: $white;
+            }
+        }
+    }
+}
